@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi opinión sobre Corberan</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ff7a00, #111);
+    color: #222;
+}
+
+header {
+    background: #000;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sub {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    animation: aparecer 0.6s ease;
+}
+
+@keyframes aparecer {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+    margin-top: 0;
+    color: #ff7a00;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.autor {
+    background: #fff3e8;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.botones {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 6px 6px 0 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-x { background: #111; color: white; }
+.btn-whatsapp { background: #25D366; color: white; }
+.btn-copy { background: #ff7a00; color: white; }
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin: 30px 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    Mi opinión sobre Corberan
+    <div class="sub">Artículo de opinión</div>
+</header>
+
+<div class="container">
+<div class="card">
+
+<h1>Opinión sobre Corberan</h1>
+
+<div class="autor">
+Hola, soy @GxldeParejo — CM de "Ha ganado el Valencia un partido?"
+</div>
+
+<p>Hola, soy @GxldeParejo, CM de "Ha ganado el Valencia un partido?", voy a empezar a hacer este formato principalmente porque quiero probar algo nuevo en esta cuenta así que para empezar voy a decir lo que pienso de Corberan.</p>
+
+<p>Carlos Corberan, Te ha remontado el Betis por los cambios que has hechos, Corberan no mereces estar ni un día más en el Valencia siendo el entrenador de un club grande.</p>
+
+<p>Metes a Santamaría y Almeida, dos jugadores que quieres vender teniendo a Javi Guerra que está desanimado porque no juega y que es mejor que Santamaria, Diego López que lleva varios partidos desaparecido de vez de meter a Ramazani que se deja el cuerpo en el campo.</p>
+
+<p>Metes a Tárrega que acaba de regresar de una lesión de vez de a Unai que lo has fichado mismamente porque necesitabas un central y tenías a Tárrega y Diakhaby lesionado.</p>
+
+<p>Cambias al medio campo que te estaba haciendo un buen partido, Pepelu y Ugrinic eran capaces de aguantarte los 90 minutos fácilmente.</p>
+
+<p>Te cargas a Raba, mucho mejor 10 que Almeida simplemente por una rabieta que te ha hecho en Pamplona contra el Osasuna al ser sustituido.</p>
+
+<p>El simple hecho de mantener a Foulquier, no te resuelve nada, le falta básicamente todo, tienes a Rubo que es muchísimo mejor que él comiendo banquillo porque no te da la gana que juegue.</p>
+
+<p>El cuento de Hugo Duro fuera de casa también, sabiendo que no te rinde lo sigues poniendo de titular teniendo a Sadiq que es muchísimo mejor que él cuando eres visitante.</p>
+
+<p>Espero que no, pero como pierdas los siguientes 3 partidos (Athletic en Copa, Madrid y Levante en Liga) adiós y cierra después de salir.</p>
+
+<div class="botones">
+<a class="btn btn-x" href="#">Compartir en X</a>
+<a class="btn btn-whatsapp" href="#">WhatsApp</a>
+<button class="btn btn-copy" onclick="copiar()">Copiar texto</button>
+</div>
+
+</div>
+</div>
+
+<footer>
+Página creada en formato blog personal
+</footer>
+
+<script>
+function copiar() {
+    navigator.clipboard.writeText(document.querySelector(".card").innerText);
+    alert("Texto copiado");
+}
+</script>
+
+</body>
+</html>
